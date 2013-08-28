@@ -32,9 +32,7 @@ int main(int argc, const char * argv[])
       
       NSURLResponse *response = nil;
       data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:nil];
-//      [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *downloadData, NSError *connectionError) {
-//        parseData(downloadData, query);
-//      }];
+
     } else {
       NSFileManager *manager = [NSFileManager defaultManager];
       if (![manager fileExistsAtPath:[NSString stringWithUTF8String:argv[1]] isDirectory:NO]) {
@@ -76,5 +74,5 @@ void parseData(NSData* data, NSString *query)
 
 void usage()
 {
-  NSLog(@"usage: jsonq [filename] [query]");
+  NSLog(@"usage: jsonq [filename | url] [query]");
 }
