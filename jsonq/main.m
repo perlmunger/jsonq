@@ -111,7 +111,7 @@ int main(int argc, const char * argv[])
           
       } else {
           NSFileManager *manager = [NSFileManager defaultManager];
-          if (![manager fileExistsAtPath:[NSString stringWithUTF8String:argv[1]] isDirectory:NO]) {
+          if (![manager fileExistsAtPath:filepath isDirectory:NO]) {
               NSLog(@"File doesn't exist.");
               return 1;
           }
