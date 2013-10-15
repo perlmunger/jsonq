@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B341C0C317FDBF9E0039615B /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B341C0C217FDBF9E0039615B /* NSObject+Additions.m */; };
+		B341C10A17FDC7D50039615B /* GBCommandLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B341C10517FDC7D50039615B /* GBCommandLineParser.m */; };
+		B341C10B17FDC7D50039615B /* GBOptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B341C10717FDC7D50039615B /* GBOptionsHelper.m */; };
+		B341C10C17FDC7D50039615B /* GBSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B341C10917FDC7D50039615B /* GBSettings.m */; };
+		B341C10F17FDC8400039615B /* GBSettings+Application.m in Sources */ = {isa = PBXBuildFile; fileRef = B341C10E17FDC8400039615B /* GBSettings+Application.m */; };
 		B344678117CD934F00A1C4E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B344678017CD934F00A1C4E4 /* Foundation.framework */; };
 		B344678417CD934F00A1C4E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B344678317CD934F00A1C4E4 /* main.m */; };
 		B344678817CD934F00A1C4E4 /* jsonq.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B344678717CD934F00A1C4E4 /* jsonq.1 */; };
@@ -26,6 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B341C0C117FDBF9E0039615B /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
+		B341C0C217FDBF9E0039615B /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		B341C10417FDC7D50039615B /* GBCommandLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBCommandLineParser.h; sourceTree = "<group>"; };
+		B341C10517FDC7D50039615B /* GBCommandLineParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBCommandLineParser.m; sourceTree = "<group>"; };
+		B341C10617FDC7D50039615B /* GBOptionsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBOptionsHelper.h; sourceTree = "<group>"; };
+		B341C10717FDC7D50039615B /* GBOptionsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBOptionsHelper.m; sourceTree = "<group>"; };
+		B341C10817FDC7D50039615B /* GBSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBSettings.h; sourceTree = "<group>"; };
+		B341C10917FDC7D50039615B /* GBSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBSettings.m; sourceTree = "<group>"; };
+		B341C10D17FDC8400039615B /* GBSettings+Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GBSettings+Application.h"; sourceTree = "<group>"; };
+		B341C10E17FDC8400039615B /* GBSettings+Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GBSettings+Application.m"; sourceTree = "<group>"; };
 		B344677D17CD934F00A1C4E4 /* jsonq */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jsonq; sourceTree = BUILT_PRODUCTS_DIR; };
 		B344678017CD934F00A1C4E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B344678317CD934F00A1C4E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +60,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B341C0C417FDC56F0039615B /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B341C10317FDC7D50039615B /* GBCli */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B341C10317FDC7D50039615B /* GBCli */ = {
+			isa = PBXGroup;
+			children = (
+				B341C10D17FDC8400039615B /* GBSettings+Application.h */,
+				B341C10E17FDC8400039615B /* GBSettings+Application.m */,
+				B341C10417FDC7D50039615B /* GBCommandLineParser.h */,
+				B341C10517FDC7D50039615B /* GBCommandLineParser.m */,
+				B341C10617FDC7D50039615B /* GBOptionsHelper.h */,
+				B341C10717FDC7D50039615B /* GBOptionsHelper.m */,
+				B341C10817FDC7D50039615B /* GBSettings.h */,
+				B341C10917FDC7D50039615B /* GBSettings.m */,
+			);
+			name = GBCli;
+			path = src;
+			sourceTree = "<group>";
+		};
 		B344677417CD934F00A1C4E4 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +112,12 @@
 		B344678217CD934F00A1C4E4 /* jsonq */ = {
 			isa = PBXGroup;
 			children = (
+				B341C0C417FDC56F0039615B /* Libraries */,
 				B344678317CD934F00A1C4E4 /* main.m */,
 				B344678717CD934F00A1C4E4 /* jsonq.1 */,
 				B344678517CD934F00A1C4E4 /* Supporting Files */,
+				B341C0C117FDBF9E0039615B /* NSObject+Additions.h */,
+				B341C0C217FDBF9E0039615B /* NSObject+Additions.m */,
 			);
 			path = jsonq;
 			sourceTree = "<group>";
@@ -139,7 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B341C10F17FDC8400039615B /* GBSettings+Application.m in Sources */,
 				B344678417CD934F00A1C4E4 /* main.m in Sources */,
+				B341C10C17FDC7D50039615B /* GBSettings.m in Sources */,
+				B341C10B17FDC7D50039615B /* GBOptionsHelper.m in Sources */,
+				B341C10A17FDC7D50039615B /* GBCommandLineParser.m in Sources */,
+				B341C0C317FDBF9E0039615B /* NSObject+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +300,7 @@
 				B344678D17CD934F00A1C4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
